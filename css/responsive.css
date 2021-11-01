@@ -1,0 +1,133 @@
+/*  MENU MOBILE  */
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header .header-container {
+    padding: 40px 20px;
+  }
+  .intro .intro-bg h1 {
+    width: 350px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .intro .intro-bg p {
+    width: 350px;
+  }
+  .wrapper .features {
+    grid-template-columns: 1fr;
+  }
+  .wrapper .features p {
+    width: 350px;
+  }
+  .learn-more div h1 {
+    font-size: 2rem;
+    width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .learn-more div p {
+    width: 350px;
+  }
+  .testimonials .bg-quotes img {
+    left: 10px;
+  }
+  .testimonials .testimonials-container article {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  .testimonials .testimonials-container article > p {
+    width: 300px;
+  }
+  .registration-bg .registration {
+    padding: 30px 20px;
+    top: -160px;
+    width: 350px;
+  }
+  .registration-bg .registration input {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .registration-bg .registration .btn {
+    margin-bottom: 10px;
+    padding: 18px 75px;
+  }
+  .footer .footer-img {
+    margin-left: 20px;
+    position: relative;
+    top: -60px;
+  }
+  .footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+  .footer .footer-links a {
+    margin-bottom: 20px;
+  }
+  .footer .footer-icons {
+    margin: 0 auto;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    right: 0px;
+    background: #1c2431;
+    height: 0px;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 100px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    display: block;
+    padding: 1rem 0;
+    margin: 0 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #f6fbff;
+  }
+  #hamburger {
+    display: block;
+    color: #f6fbff;
+    width: 20px;
+    border-top: 2px solid;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
