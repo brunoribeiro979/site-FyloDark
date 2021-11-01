@@ -54,6 +54,11 @@ img {
 
 /*  INTRO  */
 .main {
+  font-family: 'Raleway', sans-serif;
+  background: #181f2b;
+}
+
+.intro {
   background: #1c2431;
   font-family: 'Raleway', sans-serif;
 }
@@ -72,15 +77,17 @@ img {
 .intro-bg h1 {
   font-size: 2.5rem;
   margin: 40px auto;
+  padding: 0 20px;
   line-height: 3.5rem;
-  width: 700px;
+  max-width: 700px;
 }
 
 .intro-bg p {
   font-size: 1.2rem;
   margin: 0 auto 40px auto;
+  padding: 0 20px;
   line-height: 1.5rem;
-  width: 600px;
+  max-width: 600px;
 }
 
 .btn {
@@ -112,12 +119,13 @@ img {
   color: #f6fbff;
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 20px;
   font-family: 'Raleway', sans-serif;
 }
 
 .features img {
   height: 100px;
+  margin: 0 auto;
 }
 
 .features h2 {
@@ -127,7 +135,7 @@ img {
 
 .features p {
   text-align: center;
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto 80px auto;
   line-height: 1.5rem;
 }
@@ -145,13 +153,13 @@ img {
 
 .learn-more h1 {
   font-size: 2.5rem;
-  width: 400px;
+  max-width: 400px;
   color: #f6fbff;
   margin-bottom: 30px;
 }
 
 .learn-more p {
-  width: 500px;
+  max-width: 500px;
   color: #f6fbff;
   margin-bottom: 20px;
   line-height: 1.3rem;
@@ -180,24 +188,24 @@ img {
 .testimonials-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   padding-top: 40px;
-  margin: 0 50px;
+  margin: 0 20px;
   position: relative;
   z-index: 100;
-  padding-bottom: 200px;
+  padding-bottom: 240px;
 }
 
 .testimonials-container article {
   background: #202a3c;
   color: #f6fbff;
   padding: 40px 30px 30px 30px;
-  margin-bottom: 200px;
   border-radius: 10px;
 }
 
 .testimonials-container article > p {
-  width: 330px;
+  max-width: 330px;
   line-height: 1.5rem;
 }
 
@@ -238,7 +246,7 @@ img {
   text-align: center;
   padding-top: 40px;
   font-family: 'Raleway', sans-serif;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
   top: -100px;
@@ -279,9 +287,11 @@ img {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-around;
   color: #f6fbff;
   padding: 0 10px 40px 10px;
+  margin: 0 20px;
 }
 
 .footer-text {
@@ -325,4 +335,16 @@ img {
 
 .footer-icons img {
   margin: 10px;
+}
+
+/*  ANIMA SCROLL */
+[data-anima='anima-scroll'] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+[data-anima='anima-scroll'].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

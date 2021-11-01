@@ -3,47 +3,57 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 701px) and (max-width: 960px) {
+  .header .header-container {
+    padding: 40px 20px;
+  }
+  .learn-more div h1 {
+    margin: 40px auto;
+    text-align: center;
+  }
+  .registration-bg .registration {
+    margin: 0 20px;
+  }
+  .registration-bg .registration input {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .registration-bg .registration .btn {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
   .header .header-container {
     padding: 40px 20px;
   }
   .intro .intro-bg h1 {
-    width: 350px;
     font-size: 2rem;
     line-height: 2.5rem;
-  }
-  .intro .intro-bg p {
-    width: 350px;
   }
   .wrapper .features {
     grid-template-columns: 1fr;
   }
   .wrapper .features p {
-    width: 350px;
+    padding: 0 20px;
   }
   .learn-more div h1 {
     font-size: 2rem;
-    width: 350px;
-    margin: 30px auto;
+    margin: 40px auto;
     text-align: center;
-  }
-  .learn-more div p {
-    width: 350px;
   }
   .testimonials .bg-quotes img {
     left: 10px;
   }
-  .testimonials .testimonials-container article {
-    margin-bottom: 40px;
-    padding: 20px;
+  .testimonials .testimonials-container {
+    padding-bottom: 200px;
   }
-  .testimonials .testimonials-container article > p {
-    width: 300px;
+  .testimonials .testimonials-container article {
+    padding: 20px;
   }
   .registration-bg .registration {
     padding: 30px 20px;
-    top: -160px;
-    width: 350px;
+    margin: 0 20px;
   }
   .registration-bg .registration input {
     width: 300px;
@@ -55,13 +65,12 @@
   }
   .footer .footer-img {
     margin-left: 20px;
-    position: relative;
-    top: -60px;
   }
   .footer .footer-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px 0;
+    margin: 0 20px;
   }
   .footer .footer-links a {
     margin-bottom: 20px;

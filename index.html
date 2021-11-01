@@ -23,50 +23,51 @@
           <span id="hamburger"></span>
         </button>
         <ul class="nav-container" id="menu" role="menu">
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Sign in</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#signin">Sign in</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="main">
-    <section class="intro">
-      <img src="./images/illustration-intro.png" alt="">
-      <div class="intro-bg">
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with <br> friends family, and co-workers.</p>
-        <button class="btn">Get Started</button>
-      </div>
 
-      <div class="wrapper">
-        <section class="features">
-          <div>
-            <img src="./images/icon-access-anywhere.svg" alt="">
-            <h2>Access your files, anywhere</h2>
-            <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
-          </div>
-          <div>
-            <img src="./images/icon-security.svg" alt="">
-            <h2>Security you can trust</h2>
-            <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
-          </div>
-          <div>
-            <img src="./images/icon-collaboration.svg" alt="">
-            <h2>Real-time collaboration</h2>
-            <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-          </div>
-          <div>
-            <img src="./images/icon-any-file.svg" alt="">
-            <h2>Store any type of file</h2>
-            <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
-          </div>
-        </section>
-    </section>
+  <section class="intro">
+    <img src="./images/illustration-intro.png" alt="">
+    <div class="intro-bg">
+      <h1>All your files in one secure location, accessible anywhere.</h1>
+      <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with <br> friends family, and co-workers.</p>
+      <button class="btn">Get Started</button>
+    </div>
+  </section>
+
+  <main class="main">
+    <div class="wrapper" id="features" data-anima="anima-scroll">
+      <section class="features">
+        <div>
+          <img src="./images/icon-access-anywhere.svg" alt="">
+          <h2>Access your files, anywhere</h2>
+          <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+        </div>
+        <div>
+          <img src="./images/icon-security.svg" alt="">
+          <h2>Security you can trust</h2>
+          <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+        </div>
+        <div>
+          <img src="./images/icon-collaboration.svg" alt="">
+          <h2>Real-time collaboration</h2>
+          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        </div>
+        <div>
+          <img src="./images/icon-any-file.svg" alt="">
+          <h2>Store any type of file</h2>
+          <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+        </div>
+      </section>
     </div>
 
-    <section class="learn-more">
+    <section class="learn-more" id="team" data-anima="anima-scroll">
       <div>
         <img src="./images/illustration-stay-productive.png" alt="">
       </div>
@@ -78,7 +79,7 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" data-anima="anima-scroll">
       <div class="bg-quotes">
         <img src="./images/bg-quotes.png" alt="">
       </div>
@@ -117,7 +118,7 @@
     </section>
   </main>
 
-  <section class="registration-bg">
+  <section class="registration-bg" id="signin">
     <div class="registration">
       <h2>Get early access today</h2>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any <br> questions, our support team would be happy to help you.</p>
