@@ -13,11 +13,14 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header-container">
       <img src="./images/logo.svg" alt="">
-      <nav>
-        <ul class="nav-container">
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul class="nav-container" id="menu" role="menu">
           <li><a href="#">Features</a></li>
           <li><a href="#">Team</a></li>
           <li><a href="#">Sign in</a></li>
@@ -154,13 +157,14 @@
         </ul>
       </div>
       <div class="footer-icons">
-        <div><img src="./images/icons/facebook.svg" alt=""></div>
-        <div><img src="./images/icons/instagram.svg" alt=""></div>
-        <div><img src="./images/icons/youtube.svg" alt=""></div>
+        <div><a href=""><img src="./images/icons/facebook.svg" alt=""></a></div>
+        <div><a href=""><img src="./images/icons/instagram.svg" alt=""></a></div>
+        <div><a href=""><img src="./images/icons/youtube.svg" alt=""></a></div>
       </div>
     </div>
   </footer>
 
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
